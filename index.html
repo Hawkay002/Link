@@ -820,6 +820,102 @@ body.light-mode .game-warning-close {
   font-size: 0px;
 }
 
+.game-tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.game-tag-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+body.light-mode .game-tag-label {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.game-tag-value {
+  color: #fff;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+body.light-mode .game-tag-value {
+  color: #1a2e3b;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.copy-tag-btn {
+  background: #ff073a80;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.light-mode .copy-tag-btn {
+  background: #00b4d8;
+  color: white;
+}
+
+.copy-tag-btn:hover {
+  background: #ff073a;
+  transform: scale(1.05);
+}
+
+body.light-mode .copy-tag-btn:hover {
+  background: #0093b8;
+}
+
+.copy-tag-btn i {
+  font-size: 1rem;
+}
+
+/* Copy notification */
+.copy-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ff073a;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  width: 200px;
+  align-items: center !important;
+  justify-content: center !important; 
+  text-align: center !important;
+  gap: 14px;
+  
+}
+
+body.light-mode .copy-notification {
+  background: #0093b8;
+  color: #1a2e3b;
+}
+
+.copy-notification.show {
+  opacity: 1;
+}
+
 /* Image Container */
 .img-container {
   display: flex;
@@ -2341,6 +2437,12 @@ body.light-mode #cd {
 <i class="fas fa-external-link-alt external-link-icon"></i>
 </a>
 </div>
+<!-- UPDATED: Game Tag for Pokémon Unite with icon -->
+<div class="game-tag-container">
+  <span class="game-tag-label">Tag:</span>
+  <span class="game-tag-value">#LXLC5ET</span>
+  <button class="copy-tag-btn" title="Copy tag"><i class="fas fa-copy"></i></button>
+</div>
 <strong class="game-strong" style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem !important; margin-top: 20px;">↓↓↓↓↓↓↓↓↓↓  Click to Enlarge  ↓↓↓↓↓↓↓↓↓↓</strong>
 <div class="img-container" style="display: flex; justify-content: space-between; align-items: center; gap: 1px !important; margin-top: 10px; border-radius: 2px !important;">
 <p style="margin-right: 10px;">
@@ -2363,6 +2465,12 @@ body.light-mode #cd {
 <img src="Game ss/Clash of Clans/Picsart_25-05-07_21-23-53-179.png" alt="Game Image" style="margin-bottom: 20px;">
 <i class="fas fa-external-link-alt external-link-icon"></i>
 </a>
+</div>
+<!-- UPDATED: Game Tag for Clash of Clans with icon -->
+<div class="game-tag-container">
+  <span class="game-tag-label">Tag:</span>
+  <span class="game-tag-value">#9V9VRYJCL</span>
+  <button class="copy-tag-btn" title="Copy tag"><i class="fas fa-copy"></i></button>
 </div>
 <strong class="game-strong" style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem !important; margin-top: 20px !important;">↓↓↓↓↓↓↓↓↓↓  Click to Enlarge  ↓↓↓↓↓↓↓↓↓↓</strong>
 <div class="img-container" style="display: flex; justify-content: space-between; align-items: center; gap: 1px !important; margin-top: 10px; border-radius: 2px !important;">
@@ -2388,6 +2496,12 @@ body.light-mode #cd {
 <i class="fas fa-external-link-alt external-link-icon"></i>
 </a>
 </div>
+<!-- UPDATED: Game Tag for Brawl Stars with icon -->
+<div class="game-tag-container">
+  <span class="game-tag-label">Tag:</span>
+  <span class="game-tag-value">#88880U08G</span>
+  <button class="copy-tag-btn" title="Copy tag"><i class="fas fa-copy"></i></button>
+</div>
 <strong class="game-strong" style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem !important; margin-top: 20px !important;">↓↓↓↓↓↓↓↓↓↓  Click to Enlarge  ↓↓↓↓↓↓↓↓↓↓</strong>
 <div class="img-container" style="display: flex; justify-content: space-between; align-items: center; gap: 1px !important; margin-top: 10px; border-radius: 2px !important;">
 <p style="margin-right: 10px;">
@@ -2408,6 +2522,12 @@ body.light-mode #cd {
 <b class="game-name-b" style="font-size: 20px; margin-top: 10px; color: #fff;">Pokémon TCG Pocket</b>
 <div style="position: relative; display: inline-block;">
 <img src="Game ss/Pokémon TCG Pocket/Picsart_25-05-24_14-38-41-863.png" alt="Game Image" style="margin-bottom: 20px;">
+</div>
+<!-- UPDATED: Game Tag for Pokémon TCG Pocket with icon -->
+<div class="game-tag-container">
+  <span class="game-tag-label">Tag:</span>
+  <span class="game-tag-value">3573962966231023</span>
+  <button class="copy-tag-btn" title="Copy tag"><i class="fas fa-copy"></i></button>
 </div>
 <strong class="game-strong" style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem !important;">↓↓↓↓↓↓↓↓↓↓  Click to Enlarge  ↓↓↓↓↓↓↓↓↓↓</strong>
 <div class="img-container" style="display: flex; justify-content: space-between; align-items: center; gap: 1px !important; margin-top: 10px; border-radius: 2px !important;">
@@ -2432,6 +2552,12 @@ body.light-mode #cd {
 <img src="Game ss/Clash Royale/Picsart_25-05-07_01-29-52-431.png" alt="Game Image" style="margin-bottom: 20px;">
 <i class="fas fa-external-link-alt external-link-icon"></i>
 </a>
+</div>
+<!-- UPDATED: Game Tag for Clash Royale with icon -->
+<div class="game-tag-container">
+  <span class="game-tag-label">Tag:</span>
+  <span class="game-tag-value">#8P89JGGRJ</span>
+  <button class="copy-tag-btn" title="Copy tag"><i class="fas fa-copy"></i></button>
 </div>
 <strong class="game-strong" style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem !important; margin-top: 20px !important;">↓↓↓↓↓↓↓↓↓↓  Click to Enlarge  ↓↓↓↓↓↓↓↓↓↓</strong>
 <div class="img-container" style="display: flex; justify-content: space-between; align-items: center; gap: 1px !important; margin-top: 10px;">
@@ -2459,6 +2585,7 @@ body.light-mode #cd {
 </div>
 </section>
 </footer>
+
 <footer class="my-footer">
 <header>
 <h1>Connections</h1>
@@ -3646,8 +3773,39 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+// NEW: Copy tag functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.className = 'copy-notification';
+  notification.innerHTML = '<i class="fas fa-check-circle"></i> Copied to clipboard!';
+  document.body.appendChild(notification);
+  
+  // Add event listeners to all copy buttons
+  document.querySelectorAll('.copy-tag-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const tagValue = this.previousElementSibling.textContent;
+      
+      // Copy to clipboard
+      navigator.clipboard.writeText(tagValue).then(() => {
+        // Show notification
+        notification.classList.add('show');
+        
+        // Hide notification after 2 seconds
+        setTimeout(() => {
+          notification.classList.remove('show');
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+        alert('Failed to copy tag. Please try again.');
+      });
+    });
+  });
+});
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 </body>
-  </html>
+</html>
