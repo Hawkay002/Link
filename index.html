@@ -3369,6 +3369,15 @@ document.addEventListener("DOMContentLoaded", function() {
             });
           }
           
+          if (passwordInput) {
+            passwordInput.addEventListener('keypress', function(event) {
+              if (event.key === 'Enter') {
+                event.preventDefault();
+                submitButton.click();
+              }
+            });
+          }
+          
           closeVaultBtn.addEventListener('click', function(event) {
             event.stopPropagation();
             vaultBox.classList.remove('active');
